@@ -1,16 +1,18 @@
 window.fbAsyncInit=()=>{
   FB.init({
-    appId: '648776228595741',
-    cookie:true,
-    xfbml:true,
-    version:'v2.8'
+    appId      : '1380096168739166',
+    xfbml      :  true,
+    cookie     :  true,
+    version    : 'v2.9'
   });
 
 
-// FB.getLoginStatus((response) => {
-//     loginHandler(response);
-//   });
+FB.getLoginStatus((response) => {
+    loginHandler(response);
+  });
 };
+
+
 
 function loginHandler(response){
   if(response.status === 'connected'){
